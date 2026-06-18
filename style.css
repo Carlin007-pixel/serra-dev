@@ -1,0 +1,178 @@
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== TIPOGRAFIA ===== */
+h1 { font-size: 3rem; font-weight: 700; line-height: 1.2; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+p  { font-size: 1rem; color: #444; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+header nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav > a {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul a {
+  font-size: 0.95rem;
+  color: #444;
+  transition: color 0.2s;
+}
+
+header nav ul a:hover {
+  color: #000;
+}
+
+/* ===== HERO ===== */
+#hero {
+  padding: 6rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+#hero a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+#hero a:hover {
+  background: #333;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  padding: 5rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-bottom: 3rem;
+}
+
+/* ===== CARDS DE SERVIÇOS ===== */
+#servicos {
+  display: block;
+}
+
+#servicos > div,
+#servicos article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* wrapper dos cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+article {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+article h3 {
+  margin-bottom: 0.75rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer nav a {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+footer nav a:hover {
+  color: #000;
+}
