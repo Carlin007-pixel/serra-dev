@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Serra — Dev & Automação</title>
+
+    <!-- SEO básico -->
+    <title>Carlos Serra — Dev & Automação | Sites, Sistemas e IA</title>
+    <meta name="description" content="Desenvolvimento web, automações e soluções com IA para empresas que querem crescer. Sites, sistemas, agentes de IA e SEO técnico." />
+    <meta name="author" content="Carlos Serra" />
+    <link rel="canonical" href="https://carloserra.dev" />
+
+    <!-- Open Graph (LinkedIn, WhatsApp, redes sociais) -->
+    <meta property="og:title" content="Carlos Serra — Dev & Automação" />
+    <meta property="og:description" content="Desenvolvimento web, automações e soluções com IA para empresas que querem crescer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carloserra.dev" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
 
     <header>
-      <nav>
-        <a href="/">Carlos Serra</a>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Carlos Serra</a>
         <ul>
           <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -22,46 +35,125 @@
     <main>
 
       <section id="hero">
-        <h1>Transformo ideias em produtos digitais</h1>
+        <span class="tag">Disponível para projetos</span>
+        <h1>Transformo ideias em <span>produtos digitais</span></h1>
         <p>Desenvolvimento web, automações e soluções com IA para empresas que querem crescer.</p>
-        <a href="#contato">Solicitar orçamento</a>
+        <a href="#contato" class="btn-primary">Solicitar orçamento</a>
+        <a href="#portfolio" class="btn-secondary">Ver projetos</a>
       </section>
 
       <section id="servicos">
         <h2>O que eu construo</h2>
-            <div class="cards">
-                <article>
-                <h3>Sites & Landing Pages</h3>
-                <p>Sites institucionais, portfólios e páginas de conversão com foco em performance e SEO.</p>
-                </article>
-                <article>
-                <h3>Sistemas Web</h3>
-                <p>Dashboards, painéis administrativos e aplicações web sob medida para o seu negócio.</p>
-                </article>
-                <article>
-                <h3>Automações & IA</h3>
-                <p>Agentes de IA, automações de processo e integrações que eliminam trabalho manual.</p>
-                </article>
+        <p class="section-sub">Soluções sob medida para cada etapa do seu negócio digital.</p>
+        <div class="cards">
+          <article>
+            <div class="card-icon">🌐</div>
+            <h3>Sites & Landing Pages</h3>
+            <p>Sites institucionais, portfólios e páginas de conversão com foco em performance e SEO.</p>
+          </article>
+          <article>
+            <div class="card-icon">⚙️</div>
+            <h3>Sistemas Web</h3>
+            <p>Dashboards, painéis administrativos e aplicações web sob medida para o seu negócio.</p>
+          </article>
+          <article>
+            <div class="card-icon">🤖</div>
+            <h3>Automações & IA</h3>
+            <p>Agentes de IA, automações de processo e integrações que eliminam trabalho manual.</p>
+          </article>
+          <article>
+            <div class="card-icon">📈</div>
+            <h3>SEO & GEO</h3>
+            <p>Otimização técnica e estratégica para mecanismos de busca tradicionais e generativos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="sobre-inner">
+          <div>
+            <h2>Tecnologia com visão de negócio</h2>
+            <p>Sou desenvolvedor e especialista em automação com background em marketing digital, analytics e SEO. Construo ferramentas que conectam tecnologia e resultado real.</p>
+            <p>Trabalho com empresas como TD SYNNEX e Ideatore Americas, entregando soluções que vão além do código — sistemas que geram crescimento mensurável.</p>
+            <div class="tags-stack">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>React</span>
+              <span>SQL</span>
+              <span>AWS</span>
+              <span>IA & LLMs</span>
+              <span>SEO Técnico</span>
             </div>
+          </div>
+          <div class="sobre-visual">
+            <div class="stat">
+              <strong>3+</strong>
+              <span>anos de experiência em dados e digital</span>
+            </div>
+            <div class="stat">
+              <strong>10+</strong>
+              <span>projetos entregues para clientes reais</span>
+            </div>
+            <div class="stat">
+              <strong>3</strong>
+              <span>idiomas: PT, EN, ES</span>
+            </div>
+            <div class="stat">
+              <strong>LATAM</strong>
+              <span>projetos com alcance regional</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="portfolio">
         <h2>Projetos recentes</h2>
-        <article>
-          <h3>Agente de IA para Landing Pages</h3>
-          <p>Agente que gera LPs e TKYs automaticamente para clientes de agência usando LLMs.</p>
-        </article>
+        <p class="section-sub">Construindo com propósito — cada projeto resolve um problema real.</p>
+        <div class="cards">
+          <article>
+            <div class="card-icon">🤖</div>
+            <h3>Agente de IA para Landing Pages</h3>
+            <p>Agente que gera LPs e TKYs automaticamente para clientes de agência usando LLMs e Spec-Driven Development.</p>
+          </article>
+          <article>
+            <div class="card-icon">📊</div>
+            <h3>Dashboard Social Media — GFT</h3>
+            <p>Painel centralizado de indicadores de redes sociais desenvolvido em Streamlit para a GFT Technology.</p>
+          </article>
+          <article>
+            <div class="card-icon">🌐</div>
+            <h3>Site Kaju Padaria & Bistrô</h3>
+            <p>Site institucional desenvolvido com HTML, CSS e JavaScript para estabelecimento local.</p>
+          </article>
+        </div>
       </section>
 
     </main>
 
     <footer>
       <p>© 2025 Carlos Serra</p>
-      <nav>
+      <nav aria-label="Links sociais">
         <a href="https://linkedin.com/in/carlos-augusto-serra" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Carlin007-pixel" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </footer>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Carlos Serra",
+  "url": "https://carloserra.dev",
+  "jobTitle": "Developer & Automation Engineer",
+  "description": "Desenvolvimento web, automações e soluções com IA para empresas que querem crescer.",
+  "knowsAbout": ["Web Development", "AI Automation", "SEO", "Data Analytics"],
+  "sameAs": [
+    "https://linkedin.com/in/carlos-augusto-serra",
+    "https://github.com/Carlin007-pixel"
+  ]
+}
+</script>
 
   </body>
 </html>
